@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>All-Items - Sk burger</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,900;1,300;1,500;1,600;1,700&family=Sacramento&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            
+            <a href="index.html" class="logo">Foods</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <div class="bx bx-cart" id="cart"></div>
+            <div class="cartCount">
+               <div class="cartCounting">0</div>
+            </div>
+
+       <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html #about">About</a></li>
+            <li><a href="index.html #menu">Menu</a></li>
+            <li><a href="index.html #service">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li id="cart-icon">Cart<i class='bx bx-cart'></i></li>
+            <div class="cartAmount">0</div>
+       </ul>
+    </header>
+
+    <button id="myButton">
+        <a href="#"><i class='bx bxs-chevron-up'></i></a>
+    </button>
+
+
+<!------ Add items in cart box Start ------>
+
+<div class="add-item">
+    <div class="fix">
+      <h3>My Cart</h3>
+      <p class="notice">*First Refresh Items* &nbsp;
+      <i class="bx bx-refresh" id="refresh"></i></p>
+      <i class="bx bx-x" id="close"></i>
+    </div>
+  <hr width="100%">
+    <div class="add-cart">
+        <h2 class="cart-empty" style="font-size: 1rem;">Cart is Empty
+         <a href="index.html #menu" class="order-items">Order-></a>
+        </h2>
+    </div>
+    <hr class="order-hr" width="100%">
+    <div class="order">
+       <h2 style="display: none;">Total-Item:- <span class="total-qty">0</span></h2>
+       <h2>Total-Price:- <span class="total-price">Rs. 0</span></h2>
+       <button class="buy-btn">Proceed to Buy</button>
+    </div>
+</div>
+<!------ Add items in cart box End ------>
+
+
+<!------------ Single item buy box Start ------------>
+
+<div class="single-item">
+    <div class="fix-heading">
+      <h3>My Cart</h3>
+      <p class="notice">*First Refresh Items* &nbsp;
+      <i class="bx bx-refresh refresh-btn" id="refresh"></i></p>
+      <i class="bx bx-x close-btn" id="close"></i>
+    </div>
+  
+    <hr width="100%">
+
+    <div class="buy-item-container">
+       <div class="buy-item"></div>
+            <div class="rate-count">
+                <h3>PRICE DETAILS</h3>
+                <hr width="100%">
+                <P>Discount:  <span class="saveAmt">₹ 10</span></P>
+              <p>Total-Item: <span id="single-item-qty">0</span></p>
+              <h2>Total-Price: <span id="single-item-price">Rs. 0</span></h2>
+              <button class="buy-btn">Order</button>
+                  <hr width="100%" style="margin-top: 3px;">
+                  <p class="free-shipping">You are Eligible for free shipping</p> 
+            </div>
+    </div>
+
+</div>
+
+
+<!------------ Single item buy box End ------------>
+
+
+
+
+<!------ menu list start ------>
+
+<div id="shop">
+
+<!-------- Burgers list Start ------>
+
+<section class="menu" id="burger" style="margin-top: 60px;">
+        <div class="heading">
+           <span>Burger's Menu</span>
+           <h2>All Types Burger's are available Here!</h2>
+        </div>
+
+    <div class="menu-container" id="container">
+          
+  <!----- Burgers list start ------>            
+           <div class="box"> 
+               <div class="box-img">
+                   <img class="food-img" src="img/cheese-burger.png">
+               </div>
+               
+               <h2 class="food-title">Cheese Burger</h2>
+               <h3>Tasty Food</h3>
+               <span class="food-price">₹ 70 </span>
+                      <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+                           </div>
+              
+           <div class="box"> 
+               <div class="box-img">
+                   <img class="food-img" src="img/chili-burger.png">
+               </div>
+               
+               <h2 class="food-title">Chilli Burger</h2>
+               <h3>Tasty Food</h3>
+               <span class="food-price">₹ 65</span>
+                     <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+                 
+           </div>
+
+           <div class="box"> 
+               <div class="box-img">
+                   <img class="food-img" src="img/desi-masala-burger.png">
+               </div>
+               
+               <h2 class="food-title">Desi-Masala</h2>
+               <h3>Tasty Food</h3>
+               <span class="food-price">₹ 50</span>
+                     <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+                 
+           </div>
+
+           <div class="box"> 
+               <div class="box-img">
+                 <img class="food-img" src="img/paneer-burger.png">
+               </div>
+               
+               <h2 class="food-title">Paneer Burger</h2>
+               <h3>Tasty Food</h3>
+               <span class="food-price">₹ 60</span>
+                     <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+                   
+           </div>
+
+           <div class="box">               
+               <div class="box-img">
+                  <img class="food-img" src="img/burger.png">
+               </div>
+               
+               <h2 class="food-title">Tikki Burger</h2>
+               <h3>Tasty Food</h3>
+               <span class="food-price">₹ 30</span>
+                     <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+                  </div>
+
+        </div>   
+    </section>
+
+    
+<!----- Pizze list start ------> 
+
+<section class="menu" id="pizza">
+            <div class="heading">
+               <span>Pizza's Menu</span>
+               <h2>All Types Pizza's are available Here!</h2>
+            </div>
+    
+        <div class="menu-container">
+                         
+            <div class="box">           
+                <div class="box-img">
+                   <img class="food-img" src="img/double-cheese-piza.png">
+                </div>
+                
+                <h2 class="food-title">Double-Cheese</h2>
+                <h3>Tasty Food</h3>
+                <span class="food-price">₹ 70</span>
+                      <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+                </div>
+               
+            <div class="box">      
+                <div class="box-img">
+                    <img class="food-img" src="img/onion-piza.png">
+                </div>
+                
+                <h2 class="food-title">Onion</h2>
+                <h3>Tasty Food</h3>
+                <span class="food-price">₹ 100</span>
+                      <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+                    </div>
+            </div>
+ 
+            <div class="box">
+                <div class="box-img">
+                    <img class="food-img" src="img/paneer-piza.png">
+                </div>
+                
+                <h2 class="food-title">Paneer</h2>
+                <h3>Tasty Food</h3>
+                <span class="food-price">₹ 140</span>
+                      <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+                   </div>
+                </div>
+ 
+            <div class="box">
+                <div class="box-img">
+                    <img class="food-img" src="img/pizza.png">
+                </div>
+                
+                <h2 class="food-title">Superb Pizaa</h2>
+                <h3>Tasty Food</h3>
+                <span class="food-price">₹ 120</span>
+                      <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+                  </div>
+                </div>
+ 
+            <div class="box">               
+                <div class="box-img">
+                    <img class="food-img" src="img/tomato-piza.png">
+                </div>
+                
+                <h2 class="food-title">Tomato</h2>
+                <h3>Tasty Food</h3>
+                <span class="food-price">₹ 130</span>
+                      <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+                  </div>
+                </div>
+
+        </div>
+
+    </section>
+
+<!----- chowmeains list start ------> 
+
+<section class="menu" id="chowmeain">
+        <div class="heading">
+           <span>Chow-Meain's Menu</span>
+           <h2>All Types Chow-Meain's are available Here!</h2>
+        </div>
+
+     <div class="menu-container">
+            
+ 
+    <div class="box">           
+        <div class="box-img">
+            <img class="food-img" src="img/chowmean.png">
+        </div>
+        
+        <h2 class="food-title">Chow-Meain</h2>
+        <h3>Tasty Food</h3>
+        <span class="food-price">₹ 70 </span>
+              <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+     </div>
+    
+    <div class="box">      
+        <div class="box-img">
+            <img class="food-img" src="img/garlic-chomean.png">
+        </div>
+        
+        <h2 class="food-title">Garlic</h2>
+        <h3>Tasty Food</h3>
+        <span class="food-price">₹ 100</span>
+              <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+     </div>
+    
+    <div class="box">
+        <div class="box-img">
+            <img class="food-img" src="img/hakka-chowmean.png">
+        </div>
+        
+        <h2 class="food-title">Hakka</h2>
+        <h3>Tasty Food</h3>
+        <span class="food-price">₹ 140</span>
+              <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+     </div>
+    
+    <div class="box">
+        <div class="box-img">
+            <img class="food-img" src="img/singapuri-chowmean.png">
+        </div>
+        
+        <h2 class="food-title">Singapuri</h2>
+        <h3>Tasty Food</h3>
+        <span class="food-price">₹ 120</span>
+              <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+     </div>
+    
+    <div class="box"> 
+        <div class="box-img">
+            <img class="food-img" src="img/veg-chowmean.png">
+        </div>
+        
+        <h2 class="food-title">Veg. Chow-Meain</h2>
+        <h3>Tasty Food</h3>
+        <span class="food-price">₹ 50 </span>
+              <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+     </div>
+  </div>
+</section>
+
+<!------ ice-cream list start -------->
+
+<section class="menu" id="ice-cream">
+    <div class="heading">
+       <span>Ice-Cream's Menu</span>
+       <h2>All Types Ice-Cream's are available Here!</h2>
+    </div>
+
+     <div class="menu-container">
+           
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/chocolate.png">
+            </div>
+            
+            <h2 class="food-title">Chocolate</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 130</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">
+            <div class="box-img">
+                <img class="food-img" src="img/kaju_kismish.png">
+            </div>
+            
+            <h2 class="food-title">kaju-kismish</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 120</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/raj_bhog.png">
+            </div>
+            
+            <h2 class="food-title">Raj-Bhog</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 50</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/strawberry.png">
+            </div>
+            
+            <h2 class="food-title">Straw-Berry</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 60</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+              <img class="food-img" src="img/icecream.png">
+            </div>
+            
+            <h2 class="food-title">Ice-Cream</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+     </div>
+ </section>   
+
+
+ <!------- Indian-Curries list start ------>
+
+ <section class="menu" id="curries">
+    <div class="heading">
+       <span>Indian-Currie's Menu</span>
+       <h2>All Types Indian-Currie's are available Here!</h2>
+    </div>
+
+     <div class="menu-container">
+        <div class="box">           
+            <div class="box-img">
+                <img class="food-img" src="img/dal_tadka.png">
+            </div>
+            
+            <h2 class="food-title">Daal-Tadka</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 70 </span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+           
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/chaap-masala.png">
+            </div>
+            
+            <h2 class="food-title">Chaap-Masala</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 130</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+                    
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/dal-makhani.png">
+            </div>
+            
+            <h2 class="food-title">Dal-Makhani</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 50 </span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+               
+        <div class="box">
+            <div class="box-img">
+                <img class="food-img" src="img/kadhai-paneer.png">
+            </div>
+            
+            <h2 class="food-title">kadhai-Paneer</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 100</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+                
+        <div class="box">
+         <div class="box-img">
+             <img class="food-img" src="img/matter-paneer.png">
+         </div>
+         
+         <h2 class="food-title">Mattar-Paneer</h2>
+         <h3>Tasty Food</h3>
+         <span class="food-price">₹ 100</span>
+              <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+             </div>
+
+     </div>
+ </section>   
+
+ <!------- milk-shake list start ------->
+
+ <section class="menu" id="milk-shake">
+    <div class="heading">
+       <span>Milk-Shake's Menu</span>
+       <h2>All Types Milk-Shake's are available Here!</h2>
+    </div>
+
+     <div class="menu-container">
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/banana-shake.png">
+            </div>
+            
+            <h2 class="food-title">Banana-Shake</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/mango-shake.png">
+            </div>
+            
+            <h2 class="food-title">Mango-Shake</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/papaya-shake.png">
+            </div>
+            
+            <h2 class="food-title">Papaya</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/strawberry-shake.png">
+            </div>
+            
+            <h2 class="food-title">Straw-Berry</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 60</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+
+            <div class="box"> 
+                <div class="box-img">
+                    <img class="food-img" src="img/milk-shake-2.png">
+                </div>
+                
+                <h2 class="food-title">Mix-Shake</h2>
+                <h3>Tasty Food</h3>
+                <span class="food-price">₹ 100</span>
+                      <div class="btnBox">
+                       <button class="btn">Add to Cart</button>
+                       <button class="buyBtn single">Buy</button>              
+                   </div>
+                </div>
+    
+     </div>
+ </section>   
+
+<!------ momos list start -------->
+
+ <section class="menu" id="momos">
+    <div class="heading">
+       <span>Momo's Menu</span>
+       <h2>All Types Momo's are available Here!</h2>
+    </div>
+
+     <div class="menu-container">
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/fry-momos.png">
+            </div>
+            
+            <h2 class="food-title">Frie</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/gravy-momos.png">
+            </div>
+            
+            <h2 class="food-title">Gravy</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 60</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/kurkare-momos.png">
+            </div>
+            
+            <h2 class="food-title">Kurkare</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/momos.png">
+            </div>
+            
+            <h2 class="food-title">Momo's</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+     </div>
+ </section>   
+
+<!------- papad list start ------->
+
+ <section class="menu" id="papad">
+    <div class="heading">
+       <span>papad's Menu</span>
+       <h2>All Types papad's are available Here!</h2>
+    </div>
+
+     <div class="menu-container">
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/frie-papad.png"></a>
+            </div>
+            
+            <h2 class="food-title">Fry-Papad</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/masala-papad.png"></a>
+            </div>
+            
+            <h2 class="food-title">Masala-Papad</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 60</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/normal-papad.png"></a>
+            </div>
+            
+            <h2 class="food-title">Amazing-Papad</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/papad-1.png">
+            </div>
+            
+            <h2 class="food-title">Sweet-Papad</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+     </div>
+ </section>   
+
+ <!-------- paratha list start ------->
+
+ <section class="menu" id="paratha">
+    <div class="heading">
+       <span>Paratha's Menu</span>
+       <h2>All Types Paratha's are available Here!</h2>
+    </div>
+
+      <div class="menu-container">
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/aloo-paratha.png">
+            </div>
+            
+            <h2 class="food-title">Aloo</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/lacha-paratha.png">
+            </div>
+            
+            <h2 class="food-title">Lacha</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 60</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/onion-paratha.png">
+            </div>
+            
+            <h2 class="food-title">Onion</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/paratha-1.png">
+            </div>
+            
+            <h2 class="food-title">Osm-Paratha</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+    </div>
+
+ </section>
+
+ <!------- pasta list start -------->
+
+ <section class="menu" id="pasta">
+    <div class="heading">
+       <span>Pasta's Menu</span>
+       <h2>All Types Pasta's are available Here!</h2>
+    </div>
+
+      <div class="menu-container">
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/cheese-pasta.png">
+            </div>
+            
+            <h2 class="food-title">Cheese-Pasta</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/pasta-1.png">
+            </div>
+            
+            <h2 class="food-title">Osm-Pasta</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 60</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+                
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/red-souce.png">
+            </div>
+            
+            <h2 class="food-title">Red-Souce</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+            
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/white-pasta.png">
+            </div>
+            
+            <h2 class="food-title">White-Pasta</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+      </div>
+ </section>
+
+ <!-------- pav-bhaji list start ------->
+
+ <section class="menu" id="pav-bhaji">
+    <div class="heading">
+       <span>Pav-Bhaji's Menu</span>
+       <h2>All Types Pav-Bhaji's are available Here!</h2>
+    </div>
+
+      <div class="menu-container">
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/paneer-pav-bhaji.png">
+            </div>
+            
+            <h2 class="food-title">Paneer-Bhaji</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/pav_bhaji.png">
+            </div>
+            
+            <h2 class="food-title">Pav-Bhaji</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 60</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/special-pav-bhaji.png">
+            </div>
+            
+            <h2 class="food-title">Special</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+      </div>
+
+ </section>
+
+ <!------- raita list start ------>
+
+ <section class="menu" id="raita">
+    <div class="heading">
+       <span>Raita's Menu</span>
+       <h2>All Types Raita's are available Here!</h2>
+    </div>
+
+      <div class="menu-container">
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/boodni-Raita.png">
+            </div>
+            
+            <h2 class="food-title">Boondi-Raita</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/dahi.png">
+            </div>
+            
+            <h2 class="food-title">Dahi</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 60</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/fruites-raita.png">
+            </div>
+            
+            <h2 class="food-title">Fruites-Raita</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/normal-raita.png">
+            </div>
+            
+            <h2 class="food-title">Amazing-Raita</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+      </div>
+
+ </section>
+
+ <!------- rice list start --------->
+
+ <section class="menu" id="rice">
+    <div class="heading">
+       <span>Rice's Menu</span>
+       <h2>All Types Rice's are available Here!</h2>
+    </div>
+
+      <div class="menu-container">
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/biryani.png">
+            </div>
+            
+            <h2 class="food-title">Biryani</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 90</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box"> 
+            <div class="box-img">
+               <img class="food-img" src="img/frie-rice.png">
+            </div>
+            
+            <h2 class="food-title">Frie-Rice</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 160</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/mattar-pulav.png">
+            </div>
+            
+            <h2 class="food-title">Mattar-Pulav</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 150</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/plain-rice.png">
+            </div>
+            
+            <h2 class="food-title">Plain-Rice</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 120</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+                          
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/veg_pulav.png">
+            </div>
+            
+            <h2 class="food-title">Veg.- Pulav</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+      </div>
+
+ </section>
+
+<!------ rolls list start ------>
+
+ <section class="menu" id="rolls">
+    <div class="heading">
+       <span>Roll's Menu</span>
+       <h2>All Types Roll's are available Here!</h2>
+    </div>
+
+      <div class="menu-container">
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/paneer-roll.png">
+            </div>
+            
+            <h2 class="food-title">Paneer-Roll</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 160</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+            
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/frie-roll.png">
+            </div>
+            
+            <h2 class="food-title">Frie-Roll</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 180</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/spring-roll.png">
+            </div>
+            
+            <h2 class="food-title">Spring-Roll</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 80</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box"> 
+            <div class="box-img">
+                 <img class="food-img" src="img/veg-roll.png">
+            </div>
+            
+            <h2 class="food-title">Veg.-Roll</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 60</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+      </div>
+
+ </section>
+
+ <!--------- roti list start --------->
+
+ <section class="menu" id="roti">
+    <div class="heading">
+       <span>Roti's Menu</span>
+       <h2>All Types Roti's are available Here!</h2>
+    </div>
+
+      <div class="menu-container">
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/butter-roti.png">
+            </div>
+            
+            <h2 class="food-title">Butter-Roti</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 50</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+                
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/mesi-roti.png">
+            </div>
+            
+            <h2 class="food-title">Mesi-Roti</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/naan-roti.png">
+            </div>
+            
+            <h2 class="food-title">Naan-Roti</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 40</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+               
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/simple-roti.png">
+            </div>
+            
+            <h2 class="food-title">Simple-Roti</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 20</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+      </div>
+
+ </section>
+
+ <!-------- salaad list start ------>
+
+ <section class="menu" id="salaad">
+    <div class="heading">
+       <span>salaad's Menu</span>
+       <h2>All Types salaad's are available Here!</h2>
+    </div>
+
+      <div class="menu-container">
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/khira-salad.png">
+            </div>
+            
+            <h2 class="food-title">Khira-Salaad</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 40</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/muli-salad.png">
+            </div>
+            
+            <h2 class="food-title">Mulli-Salaad</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 50</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/onion-salad.png">
+            </div>
+            
+            <h2 class="food-title">Onion-Salaad</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 90</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/salad-1.png">
+            </div>
+            
+            <h2 class="food-title">Mix-Salaad</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 80</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+                   
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/tamatar-salad.png">
+            </div>
+            
+            <h2 class="food-title">Tomato</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 60</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+      </div>
+
+ </section> 
+
+ <!-------- sandwich list start --------->
+
+ <section class="menu" id="sandwich">
+    <div class="heading">
+       <span>Sandwich's Menu</span>
+       <h2>All Types Sandwich's are available Here!</h2>
+    </div>
+
+      <div class="menu-container">
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/cheese-sandwich.png">
+            </div>
+            
+            <h2 class="food-title">Cheese</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box"> 
+            <div class="box-img"> 
+                <img class="food-img" src="img/paneer-sandwich.png">
+            </div>
+            
+            <h2 class="food-title">Paneer</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 60</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/tomato-sandwich.png">
+            </div>
+            
+            <h2 class="food-title">Sandwich</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/veg-sandwich.png">
+            </div>
+            
+            <h2 class="food-title">Veg-Sandwich</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 60</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+      </div>
+
+ </section>
+
+ <!--------- soup list start -------->
+
+ <section class="menu" id="soup">
+    <div class="heading">
+       <span>Soup's Menu</span>
+       <h2>All Types Soup's are available Here!</h2>
+    </div>
+
+      <div class="menu-container">
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/corn_soup.png">
+            </div>
+            
+            <h2 class="food-title">Corn-Soup</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 30</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+                      
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/soup-1.png">
+            </div>
+            
+            <h2 class="food-title">Mix-Soup</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 50</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+            
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/tomato-soup.png">
+            </div>
+            
+            <h2 class="food-title">Tomato-Soup</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 40</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/veg-soup.png">
+            </div>
+            
+            <h2 class="food-title">Veg.-Soup</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 60</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+      </div>
+
+ </section>
+
+ <!--------- Tikka list start -------->
+
+ <section class="menu" id="tikka">
+    <div class="heading">
+       <span>Tikka's Menu</span>
+       <h2>All Types Tikka's are available Here!</h2>
+    </div>
+
+      <div class="menu-container">
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/chicken-tikka.png">
+            </div>
+            
+            <h2 class="food-title">Chicken</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 130</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box"> 
+            <div class="box-img">
+                <img class="food-img" src="img/onion-tikka.png">
+            </div>
+            
+            <h2 class="food-title">Onion</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 60</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/paneer-tikka.png">
+            </div>
+            
+            <h2 class="food-title">Paneer</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 80</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+        <div class="box">               
+            <div class="box-img">
+                <img class="food-img" src="img/tandoori-tikka.png">
+            </div>
+            
+            <h2 class="food-title">Tandoori</h2>
+            <h3>Tasty Food</h3>
+            <span class="food-price">₹ 100</span>
+                  <div class="btnBox">
+                   <button class="btn">Add to Cart</button>
+                   <button class="buyBtn single">Buy</button>              
+               </div>
+            </div>
+        
+      </div>
+
+ </section>
+
+</div>
+
+    <!------footer start------>
+
+    <section id="contact">
+        <div class="footer">
+            <div class="main">
+
+                <div class="col">
+                    <h4>Menu Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Product Management</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+         
+                <div class="col">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col">
+                    <h4>Contact Us</h4>
+                   <div class="social">
+                      <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+                      <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+                      <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+                      <a href="https://www.youtube.com/@CodingwithNK" target="_blank"><i class='bx bxl-youtube'></i></a>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="copyright">
+            <p>Copyright © 2012 - 2023 TermsFeed®. All rights reserved.</p>
+            <h4>Codingwith Nk</h4>
+        </div>
+
+    </section>
+
+    
+
+    <!------Javascript start------>
+
+        <script src="script.js"></script>
+    </body>
+</html>
